@@ -1,0 +1,5 @@
+Goto the page 'http://10.111.1.21/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c'
+
+Inspect this page - you can see the tip to come here through referef using browser agent 'ft_bornToSec'
+
+So use the command 'curl -s -A 'ft_bornToSec' --referer "https://www.nsa.gov/" "http://10.111.1.21//?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c" | grep 'flag''

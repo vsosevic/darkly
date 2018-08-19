@@ -1,0 +1,5 @@
+Hover the mouse over the Facebook/Twitter/Instagram icon - you can see the url of redirection.
+
+Change the site of redirection - 'http://10.111.1.21/index.php?page=redirect&site=somesite'
+
+This is Cross-Site Request Forgery (CSRF)
