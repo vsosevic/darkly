@@ -1,0 +1,5 @@
+Goto 'http://10.111.1.21/index.php?page=recover'
+
+Inspect the Submit button. Change the email in the hidden input.
+
+Click 'Submit' button.
