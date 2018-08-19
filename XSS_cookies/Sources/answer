@@ -1,0 +1,9 @@
+Goto Inspect mode in Chrome browser.
+
+Open the tab 'Application' and goto Cookies.
+
+You can see the cookie "I_am_admin". If we decrypt the value using md5 rule we would have '68934a3e9455fa72420237eb05902327 = false'.
+
+Lets try to decrypt the world 'true' uing md5 rule 'true = b326b5062b2f0e69046810717534cb09' and copy 'b326b5062b2f0e69046810717534cb09' to the value 'I_am_admin'.
+
+Here we are.
