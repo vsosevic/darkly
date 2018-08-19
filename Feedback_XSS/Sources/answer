@@ -1,0 +1,6 @@
+Goto http://10.111.1.21/index.php?page=feedback
+
+Right click -> Inspect the page and select Message input in sources.
+Change 'maxlength=300' and write long message.
+
+Here we are - XSS vulnerability.

