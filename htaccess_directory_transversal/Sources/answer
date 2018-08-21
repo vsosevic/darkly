@@ -1,0 +1,5 @@
+As we know sites are hosted on the server in some nested directories.
+
+Lets just try to goto page like http://10.111.1.21/index.php?page=survey and try to go up to the root folder using ../../.. technique and from root to try to go to etc/passwd
+
+The correct url is http://10.111.1.21/index.php?page../../../../../../../etc/passwd

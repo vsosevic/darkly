@@ -1,0 +1,9 @@
+Goto http://10.111.1.21/robots.txt
+
+You can see two paths that are disallowed.
+
+The trouble is that we can go to those directories eventhough it should have been denied by .htaccess
+
+So goto http://10.111.1.21/whatever/ you can download the file 'htpasswd'. Inside that file you can see 'root:8621ffdbc5698829397d97767ac13db3'. Lets try to decrypt it with md5 - we have 'dragon'. Lets assume 'root' is the login and 'dragon' is the pasword.
+
+Goto http://10.111.1.21/admin/ and enter that info.
